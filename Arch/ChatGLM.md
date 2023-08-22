@@ -5,6 +5,8 @@
 - [注意力层](#注意力层)
   - [自注意力机制](#自注意力机制)
 - [GLMBlock](#glmblock)
+- [ChatGLM2-6B 推理](#chatglm2-6b-推理)
+- [ChatGLM-130B](#chatglm-130b)
 
 
 # 激活函数 GELU
@@ -49,3 +51,20 @@ $$
 
 # GLMBlock
 ![attn_layer](../Img/GLM-BLock.png)
+
+
+# ChatGLM2-6B 推理
+和CHATGLM的新增点：<Br>
+1. Multi Query Attention
+   ![Alt text](../Img/multi-query-attention.png)
+   a. 推理时，把$K,V$ 做 $meanpooling$ <br>
+   b. query不变（multi-query）.vs. query分组（group-query）<br>
+   ![Alt text](../Img/mult-group-query-head.png)
+   c. 计算结果仍然时concat
+
+# ChatGLM-130B
+和CHATGLM的不同点：<Br>
+1. Normalize Layer: DeepNorm <Br>
+   a. $Layernorm (x + f(x)) ---> Layernorm(x*\alpha + f(x))$.
+2. Activation Func: GEGLU <br>
+   ![Alt text](../Img/GEGLU.png)
