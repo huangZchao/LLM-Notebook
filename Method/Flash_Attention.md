@@ -22,9 +22,9 @@
        - 把$m$切成$T_r$ blocks, $m_1,m_2,.... \in R^{B_r}$;
   
     6. 公式
-      - ![Alt text](image.png)
+      - ![Alt text](../Img/softmax-tilling.png)
       - 注意：
         - $f(x^{(1)}) = [e^{x_1^{(1)} - m(x^{(1)})}, e^{x_2^{(1)} - m(x^{(1)})}, ...]$
         - 所以$e^{m(x^{(1)})-m(x)}f(x^{(1)}) = [e^{x_1^{(1)} - m(x)}, e^{x_2^{(1)} - m(x)}, ...]$
     7. [算法流程](#算法流程) 的12行，代表增量更新$PV$
-       - ![Alt text](image-1.png)
+       - ![Alt text](../Img/attention-cal.png)
