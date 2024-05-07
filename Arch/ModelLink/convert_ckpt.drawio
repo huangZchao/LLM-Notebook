@@ -1,0 +1,115 @@
+<mxfile host="Electron" modified="2024-05-07T03:48:18.646Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="uN6uWZBI0I5Mx95sn-iF" version="24.2.5" type="device">
+  <diagram name="第 1 页" id="YlG5PlWSHE7TLvTB3SHS">
+    <mxGraphModel dx="3344" dy="1262" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-1" target="TDvC_k-j2ZqDIT2Ywzxn-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-1" target="TDvC_k-j2ZqDIT2Ywzxn-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-1" value="&lt;pre style=&quot;margin-top: 0px; background-color: var(--vscode-textCodeBlock-background); border: 1px solid var(--vscode-widget-border); padding: 16px; border-radius: 3px; overflow: auto; text-wrap: wrap; color: rgb(204, 204, 204); font-size: 14px; text-align: start;&quot;&gt;&lt;code style=&quot;font-family: var(--vscode-editor-font-family, &amp;quot;SF Mono&amp;quot;, Monaco, Menlo, Consolas, &amp;quot;Ubuntu Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, monospace); color: var(--vscode-editor-foreground); background: none; padding: 0px; border-radius: 4px; font-size: 1em; line-height: 1.357em; display: inline-block; tab-size: 4; position: relative;&quot; dir=&quot;auto&quot; class=&quot;code-line language-shell&quot; data-line=&quot;127&quot;&gt;convert_ckpt.py&lt;/code&gt;&lt;/pre&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="210" width="350" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-2" value="&lt;pre style=&quot;margin-top: 0px; background-color: var(--vscode-textCodeBlock-background); border: 1px solid var(--vscode-widget-border); padding: 16px; border-radius: 3px; overflow: auto; text-wrap: wrap; color: rgb(204, 204, 204); font-size: 14px;&quot;&gt;&lt;code style=&quot;font-family: var(--vscode-editor-font-family, &amp;quot;SF Mono&amp;quot;, Monaco, Menlo, Consolas, &amp;quot;Ubuntu Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Courier New&amp;quot;, monospace); color: var(--vscode-editor-foreground); background: none; padding: 0px; border-radius: 4px; font-size: 1em; line-height: 1.357em; display: inline-block; tab-size: 4; position: relative;&quot; dir=&quot;auto&quot; class=&quot;code-line language-bash&quot; data-line=&quot;108&quot;&gt;--model-type GPT \&lt;br&gt;--loader llama2_hf \&lt;br&gt;--saver megatron \&lt;br&gt;--target-tensor-parallel-size 1 \&lt;br&gt;--target-pipeline-parallel-size 2 \&lt;br&gt;--load-dir ./model_from_hf/llama-2-7b-hf/ \&lt;br&gt;--save-dir ./model_weights/llama-2-7b-hf-v0.1-tp8-pp1/ \&lt;br&gt;--tokenizer-model ./model_from_hf/llama-2-7b-hf/tokenizer.model&lt;/code&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="TDvC_k-j2ZqDIT2Ywzxn-1">
+          <mxGeometry y="30" width="350" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-5" target="TDvC_k-j2ZqDIT2Ywzxn-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-5" value="loader&lt;div&gt;如，loader_llama2_hf&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-6" target="TDvC_k-j2ZqDIT2Ywzxn-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-6" target="TDvC_k-j2ZqDIT2Ywzxn-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-6" value="saver&lt;div&gt;如，saver_megatron&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-7" value="queue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-11" target="TDvC_k-j2ZqDIT2Ywzxn-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-11" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;load_checkpoint&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="650" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-13" value="&lt;div style=&quot;color: #cccccc;background-color: #1f1f1f;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;save_model_checkpoint&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="314" y="690" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-16" target="TDvC_k-j2ZqDIT2Ywzxn-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-16" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;AutoModelForCausalLM.from_pretrained&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="830" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-18" target="TDvC_k-j2ZqDIT2Ywzxn-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-18" target="TDvC_k-j2ZqDIT2Ywzxn-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-18" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;model_provider&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="945" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-20" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;megatron.core.models.gpt.GPTModel&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-900" y="945" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-22" target="TDvC_k-j2ZqDIT2Ywzxn-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-22" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;_load_checkpoint&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-245" y="635" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-26" target="TDvC_k-j2ZqDIT2Ywzxn-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-26" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;load_args_from_checkpoint&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-295" y="730" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-28" target="TDvC_k-j2ZqDIT2Ywzxn-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-28" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;load_checkpoint_to_model&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-265" y="830" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-30" target="TDvC_k-j2ZqDIT2Ywzxn-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-30" value="&lt;div style=&quot;color: #cccccc;background-color: #1f1f1f;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;set_preprocess_state&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;embedding&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-617.5" y="1080" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-32" target="TDvC_k-j2ZqDIT2Ywzxn-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-32" value="&lt;br&gt;&lt;div style=&quot;color: #cccccc;background-color: #1f1f1f;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;set_postprocess_state&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;norm &amp;amp; lm_head&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-617.5" y="1200" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-34" target="TDvC_k-j2ZqDIT2Ywzxn-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-34" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;set_layer_state&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="1310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-36" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;set_attn_state&lt;/span&gt;(&lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;layer&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;hf_layer&lt;/span&gt;)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;set_mlp_state&lt;/span&gt;(&lt;span style=&quot;color: #9cdcfe;&quot;&gt;args&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;layer&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;hf_layer&lt;/span&gt;)&lt;/div&gt;&lt;div&gt;转为megatron model&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-692.5" y="1420" width="345" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TDvC_k-j2ZqDIT2Ywzxn-40" target="TDvC_k-j2ZqDIT2Ywzxn-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-40" value="chunk" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TDvC_k-j2ZqDIT2Ywzxn-42" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;megatron.checkpointing.save_checkpoint&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="695" width="340" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
