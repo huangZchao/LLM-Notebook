@@ -17,5 +17,5 @@ $$
 _get_interleave_power_of_2(closest_power_of_2)
             + _get_interleave(2 * closest_power_of_2)[0::2][: n - closest_power_of_2]
 ```
-![alt text](image.png)
+![alt text](alibi_mask.png)
 
