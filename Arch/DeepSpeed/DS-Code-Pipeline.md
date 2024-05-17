@@ -1,6 +1,6 @@
 # Background Knowledge
 ## torch.distributed.gather
-![Alt text](./img/image.png)
+![Alt text](./image.png)
 
 # Main API
 ## deepspeed.init_distributed
