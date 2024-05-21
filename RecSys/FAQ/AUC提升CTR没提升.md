@@ -1,3 +1,7 @@
+https://jhuangpku.github.io/aucshang-sheng-ctryi-ding-shang-sheng-yao.html
+
+https://zhuanlan.zhihu.com/p/136535140?utm_source=wechat_session
+
 # 原因一：学了没用的特征
 - 例如user_feat，该user_feat下无论推什么都不会点击，所以ctr没提升；
 - 模型比较弱的时候，排序比较混乱时，低质量 item被压制是有用的，但当模型比较好了，低质量 item被压制是没用的，而应提高高质量item的score，正样本的识别能力；
