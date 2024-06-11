@@ -184,7 +184,7 @@ fn main() -> Result<(), RouterError> {
         Tokenizer::from_pretrained(tokenizer_name.clone(), Some(params)).ok()
     };
     ...
-    // 起异步线程，去请求text-generation-server起的服务
+    // 起异步线程客户端，去请求text-generation-server起的服务
     // Launch Tokio runtime
     tokio::runtime::Builder::new_multi_thread()
         .enable_all()
@@ -309,4 +309,3 @@ async fn batching_task(
 ```
 
 - warmup 做了什么，怎么计算最大支持token数；
- 
