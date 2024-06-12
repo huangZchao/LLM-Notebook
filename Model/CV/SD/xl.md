@@ -40,7 +40,7 @@ SDXL base和SDXL refiner
 
 ## 训练
 1. image downsample: <br>
-   a. 用 AutoEncoderKL 自编码器把输入图片从像素空间映射到隐向量空间，把 RGB 图片转换到隐式向量表；<br>
+   a. 用 AutoEncoderKL 自编码器把输入图片从像素空间映射到隐向量空间，把 RGB 图片转换到隐式向量；<br>
    b. 在训练 Unet 时自编码器参数已经训练好和固定的;
 
 2. text encoding:
@@ -74,4 +74,3 @@ SDXL base和SDXL refiner
 
 ### Spatial Transformer
 ![alt text](image-7.png)
-
