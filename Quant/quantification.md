@@ -43,4 +43,30 @@ $$
    ![alt text](image.png)
    - 于是 $\frac{1}{2}\delta W^T\cdot \mathbf{H}\cdot \delta W$可转为${\frac {1}{2}}\sum_{i=1}^n (\Delta x_i)^2G_{ii} +{\frac {1}{2}} \sum_{i!=j} \Delta x_i \Delta x_jG_{ij}$
    
-4. 
+4. 使$L_q$最小化，获得$w_q$即为可剪枝权重；
+$$
+\begin{align*}
+
+
+\delta W&=-\frac{w_q}{\mathbf{H}^{-1}_{qq}}\mathbf{H}^{-1}\cdot e_q \\
+&=-\frac{w_q}{\mathbf{H}^{-1}_{qq}}\mathbf{H}^{-1}_{:,q}
+\\
+L_q&=\frac{1}{2}\frac{w_q^2}{\mathbf{H}^{-1}_{qq}}
+\end{align*}
+$$
+
+# OBQ量化
+1. 分组量化
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+# GPTQ
+![alt text](image-3.png)
+
+# LLM.int8
+1. 分成2块量化，重要的不量化，不重要的量化；
+
+# awq
+
+# smoothquant
+
