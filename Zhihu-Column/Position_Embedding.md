@@ -32,9 +32,9 @@ $$
 3. Rope[<sup>2</sup>](#2)
 根据余弦和的定义
 $$
-
 A_{s,t}=x_t^TW_Q^TR_{\theta, s}R_{\theta, t}^dW_Kx_s=x_t^TW_Q^TR_{\theta, s-t}^dW_Kx_s \\
-
+$$
+$$
 R_{\theta, t}^d=\left[
     \begin{matrix}
     cost{\theta}_1 & -sint{\theta}_1 & ... & 0   & 0   \\
@@ -45,9 +45,47 @@ R_{\theta, t}^d=\left[
     ...            & ...             & ... & sint{\theta}_{\frac{d}{2}} & cost{\theta}_{\frac{d}{2}} 
     \end{matrix}
 \right] \\
-
-{\theta}_n = \frac{1}{10000^{\frac{2n}{d}}}
 $$
+$$
+{\theta}_n = \frac{1}{10000^{\frac{2(n-1)}{d}}}
+$$
+
+$$
+R_{\theta, t}^dx_t=\left(\begin{matrix}
+x_{t,0} \\
+x_{t,1} \\
+x_{t,2} \\
+x_{t,3} \\
+...\\
+x_{t,d-2} \\
+x_{t,d-1} \\
+  \end{matrix}\right) \left(\begin{matrix}
+cost{\theta}_{0} \\
+cost{\theta}_{0} \\
+cost{\theta}_{1} \\
+cost{\theta}_{1} \\
+...\\
+cost{\theta}_{\frac{d}{2}-1} \\
+cost{\theta}_{\frac{d}{2}-1} \\
+  \end{matrix}\right) + \left(\begin{matrix}
+-x_{t,1} \\
+x_{t,0} \\
+-x_{t,3} \\
+x_{t,2} \\
+...\\
+-x_{t,d-1} \\
+x_{t,d-2} \\
+  \end{matrix}\right) \left(\begin{matrix}
+sint{\theta}_{0} \\
+sint{\theta}_{0} \\
+sint{\theta}_{1} \\
+sint{\theta}_{1} \\
+...\\
+sint{\theta}_{\frac{d}{2}-1} \\
+sint{\theta}_{\frac{d}{2}-1} \\
+  \end{matrix}\right)
+$$
+
 
    - GPT_NeoX Style
 
