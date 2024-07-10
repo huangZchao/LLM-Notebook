@@ -1,4 +1,4 @@
-# Lookahead
+# Parallel Decoding（并行解码综述）
 
 ## 背景
 大模型推理分为prefill和decode：
@@ -32,7 +32,8 @@ PS：单链的speculative decoding
 - 同样的使用tree-mask，进行并行解码，随后进行校验；
 ![alt text](image-3.png)
 
-### 4. Lookahead
+### 4. Lookahead[<sup>6</sup>](#6)
+
 
 ### 5. REST[<sup>5</sup>](#5)
 - 原因：因为大小模型投机推理，小模型的选取较难，能否不通过模型生成draft_token；<br>
@@ -42,6 +43,7 @@ PS：单链的speculative decoding
   3. tree mask使用llm前向推理做验证；
 - datastore构建：为每个context的每个position都构建一组Context-Continuation；
 - 前缀树构建：看step2的图，前缀出现次数筛选（当draft seq太多时，需要过滤）
+- LLM验证：tree attention
 ![alt text](image-5.png)
 
 
@@ -74,3 +76,7 @@ PS：单链的speculative decoding
 <div id="5"></div>
 
 [5][REST: Retrieval-Based Speculative Decoding](https://arxiv.org/pdf/2311.08252)
+
+<div id="6"></div>
+
+[6][Break the Sequential Dependency of LLM Inference Using LOOKAHEAD DECODING](https://arxiv.org/pdf/2402.02057)
