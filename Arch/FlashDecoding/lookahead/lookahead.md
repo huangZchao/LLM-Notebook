@@ -32,7 +32,17 @@ PS：单链的speculative decoding
 - 同样的使用tree-mask，进行并行解码，随后进行校验；
 ![alt text](image-3.png)
 
-### 4. lookahead
+### 4. Lookahead
+
+### 5. REST[<sup>5</sup>](#5)
+- 原因：因为大小模型投机推理，小模型的选取较难，能否不通过模型生成draft_token；<br>
+- 流程：<br>
+  1. input prompt作为query去datastore进行检索（最长后缀匹配）；
+  2. 检索出来的语句构建前缀树；
+  3. tree mask使用llm前向推理做验证；
+- datastore构建：为每个context的每个position都构建一组Context-Continuation；
+- 前缀树构建：看step2的图，前缀出现次数筛选（当draft seq太多时，需要过滤）
+![alt text](image-5.png)
 
 
 ## 进一步优化
@@ -59,3 +69,8 @@ PS：单链的speculative decoding
 <div id="4"></div>
 
 [4][MEDUSA: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads](https://arxiv.org/pdf/2401.10774)
+
+
+<div id="5"></div>
+
+[5][REST: Retrieval-Based Speculative Decoding](https://arxiv.org/pdf/2311.08252)
