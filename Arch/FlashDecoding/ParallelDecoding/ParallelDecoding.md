@@ -8,6 +8,9 @@
 为了充分利用GPU、NPU等的芯片算力，decode能否也像prefill阶段进行并发前向解码呢？
 
 ## 技术路线
+### 共性
+![alt text](image-6.png)
+
 ### 1. 大小模型投机推理（Speculative Decoding）[<sup>1</sup>](#1)
 ```
 loop：

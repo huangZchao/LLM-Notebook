@@ -1,0 +1,24 @@
+<mxfile host="Electron" modified="2024-07-11T01:21:19.794Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.1 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="G4vbM0nCCAf8fG0MYyiU" version="24.6.1" type="device">
+  <diagram name="第 1 页" id="yrMvAgA0ixpfg7h-j8JQ">
+    <mxGraphModel dx="1001" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KLb7Ll-S_uITYMDN0asD-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KLb7Ll-S_uITYMDN0asD-1" target="KLb7Ll-S_uITYMDN0asD-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="240" />
+              <mxPoint x="550" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KLb7Ll-S_uITYMDN0asD-1" value="Construct Draft Token" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="300" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KLb7Ll-S_uITYMDN0asD-3" value="LLM verified" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="300" width="160" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
