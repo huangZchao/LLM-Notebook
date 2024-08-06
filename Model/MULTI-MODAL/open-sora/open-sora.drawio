@@ -75,6 +75,9 @@
         <mxCell id="CnIc-lJ5m3YBsRFUZUaB-19" value="replace y_embeder" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170" y="840" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="CnIc-lJ5m3YBsRFUZUaB-22" value="build scheduler" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
