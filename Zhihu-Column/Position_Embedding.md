@@ -113,8 +113,49 @@ $$
 
 引用自苏剑林老师
 ```
-1. sliding windows attentions
-2. 
+### 1. sliding windows attentions
+### 2. yarn
+$$
+freq\_extra=\frac{1}{base^{\frac{[0,2,4,...,dim]}{dim}}}
+$$
+$$
+freq\_inter=\frac{1}{scaling\_factor * base^{\frac{[0,2,4,...,dim]}{dim}}}
+$$
+$$
+\begin{align}
+low =& max(\frac{dim*log^{\frac{Max\_Position}{2\pi*low\_root}}}{2*log^{base}}, 0) \\
+hight =& min(\frac{dim*log^{\frac{Max\_Position}{2\pi*high\_root}}}{2*log^{base}}, dim - 1) \\
+Num\_Rotation =& low\_root \space or \space high\_root
+\end{align}
+$$
+$$
+\begin{align}
+inv\_freq\_mask=&1-clamp(\frac{[0,1,2,...,dim//2]-low}{high-low}) \\
+inv\_freq=&freq\_inter * (1 - inv\_freq\_mask) + freq\_extra * inv\_freq\_mask
+\end{align}
+$$
+```python
+def yarn_get_mscale(scale=1, mscale=1):
+    if scale <= 1:
+        return 1.0
+    return 0.1 * mscale * math.log(scale) + 1.0
+
+t = torch.arange(seq_len, device=device, dtype=torch.float32)
+freqs = torch.outer(t, inv_freq)
+_mscale = float(
+    yarn_get_mscale(self.scaling_factor, self.mscale)
+    / yarn_get_mscale(self.scaling_factor, self.mscale_all_dim)
+)
+
+emb = torch.cat((freqs, freqs), dim=-1)
+self.register_buffer(
+    "cos_cached", (emb.cos() * _mscale).to(dtype), persistent=False
+)
+self.register_buffer(
+    "sin_cached", (emb.sin() * _mscale).to(dtype), persistent=False
+)
+```
+
 后续补充
 （怎么做，原理是什么）
 

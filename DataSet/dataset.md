@@ -24,3 +24,7 @@
 
 9. truthfulqa
 ![alt text](image-8.png)
+
+10. Needle In A Haystack
+![alt text](image-9.png)
+- document depth is where the needle place on;
